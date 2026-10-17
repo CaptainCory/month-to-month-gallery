@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<rect width="600" height="600" fill="#F6D55C"/>
+
+<rect x="150" y="110" width="300" height="380" rx="18" fill="#FFFFFF" stroke="#111" stroke-width="12"/>
+<rect x="150" y="110" width="300" height="110" rx="18" fill="#E4572E" stroke="#111" stroke-width="12"/>
+<rect x="156" y="190" width="288" height="30" fill="#E4572E"/>
+<circle cx="220" cy="110" r="14" fill="#111"/><circle cx="380" cy="110" r="14" fill="#111"/>
+<text x="300" y="190" text-anchor="middle" font-family="Futura, sans-serif" font-weight="800" font-size="52" letter-spacing="6" fill="#fff">MONTH</text>
+<text x="300" y="350" text-anchor="middle" font-family="Futura, sans-serif" font-weight="800" font-size="120" fill="#111">TO</text>
+<text x="300" y="440" text-anchor="middle" font-family="Futura, sans-serif" font-weight="800" font-size="52" letter-spacing="6" fill="#111">MONTH</text>
+<path d="M150 490 l20 18 l20 -18 l20 18 l20 -18 l20 18 l20 -18 l20 18 l20 -18 l20 18 l20 -18 l20 18 l20 -18 l20 18 l20 -18 l20 18" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+</svg>
