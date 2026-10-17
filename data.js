@@ -13,7 +13,11 @@ export const site = Object.freeze({
     { name: "Evan Goodburn", bio: "Venice artist and co-founder. Bio to come." },
   ],
   events: [],
-  paintings: [],
+  paintings: [
+    { title: "Sexagesimal", artist: "Cory Stout", size: "72 × 60 in", price: 4500, status: "available", image: "art/sexagesimal.jpg" },
+    { title: "Color Coded", artist: "Cory Stout", size: "36 × 24 in", price: 1800, status: "available", image: "art/color-coded.jpg" },
+    { title: "We Started the Fire", artist: "Cory Stout", size: "36 × 24 in", price: 1600, status: "available", image: "art/we-started-the-fire.jpg" },
+  ],
   visitors: [], // names shown only with each visitor's consent
   floorPlan: [
     { zone: "Entrance", area: "boardwalk" },

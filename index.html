@@ -63,7 +63,7 @@
   const fmtPrice = (n) => "$" + n.toLocaleString("en-US");
 
   const eventRow = (e) => `<tr><td><strong>${esc(fmtDate(e.date))}</strong></td><td>${esc(e.title)}<br><span class="muted">${esc(e.note)}</span></td></tr>`;
-  const paintingCard = (p) => `<div class="card"><div class="art">${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)}">` : "Image coming"}</div><strong>${esc(p.title)}</strong><br><span class="muted">${esc(p.artist)} · ${esc(fmtPrice(p.price))} · ${esc(p.status)}</span></div>`;
+  const paintingCard = (p) => `<div class="card"><div class="art">${p.image ? `<img src="${esc(p.image)}" alt="${esc(p.title)}">` : "Image coming"}</div><strong>${esc(p.title)}</strong><br><span class="muted">${esc(p.artist)} · ${esc(p.size || "")} · ${esc(fmtPrice(p.price))} · ${esc(p.status)}</span></div>`;
   const hoursRow = (h) => `<tr><td>${esc(h.days)}</td><td>${esc(h.time)}</td></tr>`;
   const founderCard = (f) => `<div class="card"><strong>${esc(f.name)}</strong><p>${esc(f.bio)}</p></div>`;
   const visitorsText = (v) => v.length ? v.map(esc).join(" · ") : "Our guestbook opens with the first visitors.";
