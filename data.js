@@ -5,7 +5,7 @@ export const site = Object.freeze({
   address: "Venice Beach Boardwalk, Venice, CA", // TODO: exact storefront address
   mapQuery: "Venice Beach Boardwalk, Venice, CA",
   hours: [
-    { days: "No regular hours", time: "Visits by appointment — message us on Instagram" },
+    { days: "Hours", time: "IYKYK" },
   ],
   contact: { email: "", instagram: "month2month_venice", phone: "" },
   founders: [
