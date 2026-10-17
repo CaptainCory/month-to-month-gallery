@@ -76,12 +76,12 @@
   document.title = site.name;
   set("name", esc(site.name));
   set("tagline", esc(site.tagline));
-  set("events-list", upcoming.length ? upcoming.map(eventRow).join("") : `<tr><td class="muted">New nights announced soon. Stop by the boardwalk.</td></tr>`);
-  set("paintings-grid", site.paintings.length ? site.paintings.map(paintingCard).join("") : `<p class="muted">Collection coming online soon. Visit to see the work in person.</p>`);
+  set("events-list", upcoming.length ? upcoming.map(eventRow).join("") : `<tr><td class="muted">New nights announced soon on Instagram.</td></tr>`);
+  set("paintings-grid", site.paintings.length ? site.paintings.map(paintingCard).join("") : `<p class="muted">Collection coming online soon. Book a visit to see the work in person.</p>`);
   set("hours", site.hours.map(hoursRow).join(""));
   set("address", esc(site.address));
   set("founders", site.founders.map(founderCard).join(""));
-  set("contact-info", contactText(site.contact) || "Come say hello on the Venice boardwalk.");
+  set("contact-info", contactText(site.contact) || "Message us on Instagram to book a visit.");
   set("footer", `${esc(site.name)} · ${esc(site.address)}`);
   document.getElementById("gmap").src = "https://maps.google.com/maps?output=embed&q=" + encodeURIComponent(site.mapQuery);
 </script>
