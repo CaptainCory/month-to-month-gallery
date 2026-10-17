@@ -8,7 +8,7 @@ export const site = Object.freeze({
     { days: "Most days", time: "Open on the boardwalk; walk-ins welcome" },
     { days: "Private visits", time: "By appointment" },
   ],
-  contact: { email: "", instagram: "", phone: "" },
+  contact: { email: "", instagram: "month2month_venice", phone: "" },
   founders: [
     { name: "Cory Stout", bio: "Author of END SMALL TALK, founder of Woodies, Ironman, pilot in training. Paints chameleon-inspired work live on the boardwalk." },
     { name: "Evan Goodburn", bio: "Venice artist and co-founder. Bio to come." },

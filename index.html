@@ -67,7 +67,7 @@
   const hoursRow = (h) => `<tr><td>${esc(h.days)}</td><td>${esc(h.time)}</td></tr>`;
   const founderCard = (f) => `<div class="card"><strong>${esc(f.name)}</strong><p>${esc(f.bio)}</p></div>`;
   const visitorsText = (v) => v.length ? v.map(esc).join(" · ") : "Our guestbook opens with the first visitors.";
-  const contactText = (c) => [c.email && `Email: ${esc(c.email)}`, c.instagram && `Instagram: ${esc(c.instagram)}`, c.phone && `Phone: ${esc(c.phone)}`].filter(Boolean).join("<br>");
+  const contactText = (c) => [c.email && `Email: ${esc(c.email)}`, c.instagram && `Instagram: <a href="https://instagram.com/${esc(c.instagram)}">@${esc(c.instagram)}</a>`, c.phone && `Phone: ${esc(c.phone)}`].filter(Boolean).join("<br>");
 
   // Adapter: the only DOM mutation.
   const set = (id, html) => { document.getElementById(id).innerHTML = html; };
