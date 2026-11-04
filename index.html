@@ -28,6 +28,7 @@
   .plan .entrance { grid-column:1 / 4; background:var(--red); color:var(--paper); }
   iframe { width:100%; height:320px; border:0; margin-top:16px; }
   footer { text-align:center; padding:32px; font-family:system-ui, sans-serif; font-size:.8rem; color:var(--muted); }
+  footer a { color:var(--muted); }
 </style>
 </head>
 <body>
@@ -82,7 +83,7 @@
   set("address", esc(site.address));
   set("founders", site.founders.map(founderCard).join(""));
   set("contact-info", contactText(site.contact) || "Message us on Instagram to book a visit.");
-  set("footer", `${esc(site.name)} · ${esc(site.address)}`);
+  set("footer", `${esc(site.name)} · ${esc(site.address)} · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy Policy</a>`);
   document.getElementById("gmap").src = "https://maps.google.com/maps?output=embed&q=" + encodeURIComponent(site.mapQuery);
 </script>
 </body>
