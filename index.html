@@ -29,13 +29,15 @@
   iframe { width:100%; height:320px; border:0; margin-top:16px; }
   footer { text-align:center; padding:32px; font-family:system-ui, sans-serif; font-size:.8rem; color:var(--muted); }
   footer a { color:var(--muted); }
+  .sms-cta { background:#fff; border:2px solid var(--red); padding:24px; line-height:1.55; }
+  .sms-cta p:last-child { margin-bottom:0; }
 </style>
 </head>
 <body>
 <header><img src="logo.svg" alt="Month to Month" style="width:160px;height:160px;display:block;margin:0 auto 12px"><h1 id="name"></h1><p id="tagline"></p></header>
 <nav>
   <a href="#events">Events</a><a href="#paintings">Paintings</a><a href="#visit">Visit</a>
-  <a href="#map">Map</a><a href="#about">About</a><a href="#contact">Contact</a>
+  <a href="#map">Map</a><a href="#about">About</a><a href="#texts">Event texts</a><a href="#contact">Contact</a>
 </nav>
 
 <section id="events"><h2>Calendar</h2><table id="events-list"></table></section>
@@ -51,6 +53,15 @@
   <iframe id="gmap" loading="lazy" title="Location map"></iframe>
 </section>
 <section id="about"><h2>About</h2><div class="grid" id="founders"></div></section>
+
+<section id="texts">
+  <h2>Event texts</h2>
+  <div class="sms-cta">
+    <p><strong>Text JOIN to +1 (213) 556-2501</strong> to receive recurring Month to Month event invitations and gallery announcements from Woodies International, LTD.</p>
+    <p>Message frequency varies, typically 1–4 messages per month. Message and data rates may apply. Reply HELP for help or STOP to opt out at any time. Consent is not a condition of purchase.</p>
+    <p>No mobile information or opt-in consent will be shared with third parties or affiliates for marketing or promotional purposes. See our <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+</section>
 
 <section id="contact"><h2>Contact</h2><p id="contact-info"></p></section>
 <footer id="footer"></footer>
